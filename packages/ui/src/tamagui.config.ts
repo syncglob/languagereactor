@@ -59,7 +59,20 @@ export const config = createTamagui({
     heading: headingFont,
     body: bodyFont,
   },
-  themes,
+  themes: {
+    dark: {
+      background: 'rgb(32, 34, 37)',
+      cardBackground: 'rgba(46, 49, 54, 0.5)',
+      color: '#fff',
+      hoverColor: "rgba(255, 255, 255, 0.16)"
+    },
+    light: {
+      background: 'rgb(32, 34, 37)',
+      cardBackground: 'rgba(46, 49, 54, 0.5)',
+      color: '#fff',
+      hoverColor: "rgba(255, 255, 255, 0.16)"
+    }
+  },
   tokens,
   media: createMedia({
     xs: { maxWidth: 660 },

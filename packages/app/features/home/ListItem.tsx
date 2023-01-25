@@ -12,7 +12,7 @@ export const ItemTextNode = styled(Pressable, {
     borderRadius: '$1',
   },
 })
-export function ListItem({ item }) {
+export function ListItem({ item, index }) {
   const theme = useTheme()
 
   const { sections } = item
@@ -25,6 +25,7 @@ export function ListItem({ item }) {
           <SizableText size="$5">{value}</SizableText>
         </ItemTextNode>
       ))}
+      <SizableText ml="auto" size="$5">Item: {index + 1}</SizableText>
     </Card>
   )
 }

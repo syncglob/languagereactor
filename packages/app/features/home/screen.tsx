@@ -27,7 +27,7 @@ class List extends React.Component {
     return (
       <FlatList
         ref={(ref) => (this.flatListRef = ref)}
-        data={Array(50)
+        data={Array(20)
           .fill(lang == 'ar' ? arData : data)
           .flat()}
         onScrollToIndexFailed={this.scrollToIndexFailed.bind(this)}
